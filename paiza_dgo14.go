@@ -4,23 +4,20 @@ import (
 	"bufio"
 	"fmt"
 	"os"
-	"strconv"
-	"strings"
 )
 
 func main() {
 	// 自分の得意な言語で
 	// Let's チャレンジ！！
 	sc := bufio.NewScanner(os.Stdin)
+
 	sc.Scan()
 
-	data := sc.Text()
-	array1 := strings.Split(data, " ")
+	data1 := sc.Text()
 
-	A, _ := strconv.Atoi(array1[0])
-	B, _ := strconv.Atoi(array1[1])
-	ans1 := A - B
-	ans2 := A * B
+	sc.Scan()
+	data2 := sc.Text()
 
-	fmt.Println(strconv.Itoa(ans1) + " " + strconv.Itoa(ans2))
+	fmt.Println(data1)
+	fmt.Println(data2)
 }

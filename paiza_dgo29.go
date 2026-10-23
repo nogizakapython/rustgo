@@ -10,16 +10,16 @@ import (
 func main() {
 	// 自分の得意な言語で
 	// Let's チャレンジ！！
-
 	sc := bufio.NewScanner(os.Stdin)
 
 	sc.Scan()
 
-	a, _ := strconv.Atoi(sc.Text())
+	n, _ := strconv.Atoi(sc.Text())
 
-	sc.Scan()
+	ans := ""
 
-	b, _ := strconv.Atoi(sc.Text())
-
-	fmt.Println(a - b)
+	for i := 0; i < n; i++ {
+		ans = ans + "*"
+	}
+	fmt.Println(ans)
 }

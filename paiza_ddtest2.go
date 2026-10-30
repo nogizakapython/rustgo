@@ -1,4 +1,5 @@
 package main
+
 import "fmt"
 import "os"
 import "strconv"
@@ -35,14 +36,10 @@ func main(){
     
     for j := 0; j < len(array2) ; j++ {
         sum_v += array2[j]
-        
     }
     
     ans := sum_v - max_v - min_v
     
-    
-    
     fmt.Println(ans)
-    
-    
+       
 }
